@@ -8,7 +8,7 @@ Skeleton project for the coding assessment. The tests are coded in Java 11/Selen
 4. Open the project in IntelliJ by doing a `File->Open` and selecting the `pom.xml` file. Make sure the Maven tab is open on the right-side of the IDE and lists the dependencies(selenium-java, testng, etc.)
 5. Run the tests from the Terminal by running the command from project root:
 
-`mvn verify` -> this should run a test which navigates to https://www.boxed.com/ and asserts the page title.
+`mvn verify -Dgroups=sample` -> this should run a test which navigates to https://www.boxed.com/ and asserts the page title.
 
 ### Notes
 1. If you encounter a captcha page when running the above test, please let us know, and we will fix it!
