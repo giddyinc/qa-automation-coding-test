@@ -5,8 +5,9 @@ Skeleton project for the coding assessment. The tests are coded in Java 11/Selen
 1. Install IntelliJ IDEA IDE from [here](https://www.jetbrains.com/idea/)
 2. Install Apache Maven like `brew install maven` from Terminal
 3. Make sure to have Java 11 installed, can be downloaded from [here](https://www.oracle.com/java/technologies/downloads)
-4. Open the project in IntelliJ by doing a `File->Open` and selecting the `pom.xml` file. Make sure the Maven tab is open on the right-side of the IDE and lists the dependencies(selenium-java, testng, etc.)
-5. Run the tests from the Terminal by running the command from project root:
+4. Trust the Browsermob CA certificate `ca-certificate-rsa.cer` to get around bot-protection. Depending on your OS, follow the similar instructions from [this article](https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate/ca-cert-chrome) to do so, but use the certificate included in repo. 
+5. Open the project in IntelliJ by doing a `File->Open` and selecting the `pom.xml` file. Make sure the Maven tab is open on the right-side of the IDE and lists the dependencies(selenium-java, testng, etc.)
+6. Run the tests from the Terminal by running the command from project root:
 
 `mvn verify -Dgroups=sample` -> this should run a test which navigates to https://www.boxed.com/ and asserts the page title.
 
